@@ -1,0 +1,53 @@
+\newcommand{\sinth}{\sin \theta} 
+\newcommand{\sinsq}{\sin ^2 \theta}
+\newcommand{\costh}{\cos \theta}
+\newcommand{\spsi}{\psi \left(r, \theta, \phi \right)} %spherical wave function
+\newcommand{\spoten}{V \left(r, \theta, \phi \right)} %spherical potential
+\newcommand{\qham}{-\frac{\hbar^2}{2m}\nabla^2} %generic quantum hamiltonian
+\newcommand{\rham}{-\frac{\hbar^2}{2m}\frac{\mathrm{d}^2u}{\mathrm{d}r^2}} %radial hamiltonian with u(r)
+\newcommand{\qtev}{i \hbar \frac{\partial}{\partial t}}
+\newcommand{\rpoten}{V\left(r\right)} %radial potential
+\newcommand{\radeq}{\frac{1}{R}\frac{\mathrm{d}}{\mathrm{d}r}\left(r^2\frac{\mathrm{d}R}{\mathrm{d}r}\right)-\frac{2mr^2}{\hbar^2}\left[\rpoten - E\right] = \ell\left(\ell + 1 \right)}
+\newcommand{\spheq}{\frac{1}{Y}\left\lbrace\frac{1}{\sinth}\frac{\partial}{\partial \theta}\left(\sinth \frac{\partial Y}{\partial \theta}\right) + \frac{1}{\sinsq}\frac{\partial^2Y}{\partial \phi^2}\right\rbrace = -\ell\left(\ell + 1 \right)}
+\newcommand{\alegpol}{P_\ell^m\left(\costh\right)} %associated legendre polynomials
+\newcommand{\legpol}{P_\ell\left(\costh\right)} %function of legendre polynomials
+\newcommand{\sphharmeq}{Y_\ell^m = \sqrt{\frac{\left(2\ell + 1\right)}{4 \pi}\frac{\left(\ell - |m|\right)!}{\left(\ell + |m| \right)!}}e^{im\phi}\alegpol} %normalized spherical harmonics
+\newcommand{\sphharm}{Y_\ell^m\left(\theta,\phi\right)} %Spherical Harmonic as a function
+\newcommand{\coulombpot}{-\frac{e^2}{4 \pi \epsilon_0 r}} %coulomb potential
+\newcommand{\veff}{V_{eff} = V + \frac{\hbar^2}{2m}\frac{\ell\left(\ell + 1 \right)}{r^2}} %effective potential
+\newcommand{\zspinorup}{\chi_{+} = \begin{pmatrix} %spin up in z
+1\\
+0\\
+\end{pmatrix}}
+\newcommand{\zspinordown}{\chi_{-} = \begin{pmatrix} %spin down in z
+0 \\
+1\\
+\end{pmatrix}}
+\newcommand{\arbspin}{S_{j} = \frac{\hbar}{2}\sigma_{j}} %spin 1/2 matrix for any direction based on pauli
+\newcommand{\spinx}{S_{x} = \frac{\hbar}{2}\begin{pmatrix} %spin in x
+0 & 1\\
+1 & 0\\
+\end{pmatrix}}
+\newcommand{\spiny}{S_y = \frac{\hbar}{2}\begin{pmatrix} %spin matrix in the y direction
+0 & -i\\
+i & 0\\
+\end{pmatrix}}
+\newcommand{\spinz}{S_z = \frac{\hbar}{2}\begin{pmatrix} %spin matrix in the z direction
+1 & 0\\
+0 & -1\\
+\end{pmatrix}}
+\newcommand{\ket}[1]{|#1\rangle} %ket formula
+\newcommand{\bra}[1]{\langle #1 |} %bra formula
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle} %inner product
+\newcommand{\eigenspinor}[2]{\begin{pmatrix} %any eigenspinor in spin 1/2
+#1 \\
+#2 \\
+\end{pmatrix}}
+\newcommand{\expecval}[1]{\left\langle #1 \right\rangle} %expectation value
+\newcommand{\ladderopup}[1]{#1_{+}} %ladder operator going up
+\newcommand{\ladderopdown}[1]{#1_{-}} %ladder operator going down
+\newcommand{\ladderopform}[1]{#1_{\pm} = #1_{x} \pm i #1_{y}} %general expression for ladder operators
+\newcommand{\ladderopformup}[1]{#1_{+} = #1_{x} + i #1_{y}} %expression for ladder up
+\newcommand{\ladderopformdown}[1]{#1_{-} = #1_{x} - i #1_{y}} %expression for ladder down
+\newcommand{\commutator}[4]{\left[#1_{#2} , #1_{#3}\right] = i\hbar #1_{#4}} %commutator algebra
+\newcommand{\commgen}[1]{\left[#1_{i},#1_{j}\right] = i \epsilon_{ijk} #1_{k}} %general lie algebra form of commutator
